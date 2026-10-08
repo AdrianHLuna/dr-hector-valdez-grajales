@@ -14,8 +14,8 @@ interface BreadcrumbsProps {
 
 export function Breadcrumbs({ items, isDark = false }: BreadcrumbsProps) {
   const baseTextColor = isDark ? "text-neutral-300" : "text-neutral-500";
-  const hoverTextColor = isDark ? "hover:text-white" : "hover:text-[#0C4A42]";
-  const activeTextColor = isDark ? "text-[#5EEAD4]" : "text-[#0C4A42]";
+  const hoverTextColor = isDark ? "hover:text-white" : "hover:text-[#312A57]";
+  const activeTextColor = isDark ? "text-[#DDD8F5]" : "text-[#312A57]";
 
   return (
     <nav aria-label="Breadcrumb" className="py-2.5">

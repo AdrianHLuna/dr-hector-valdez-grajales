@@ -67,7 +67,7 @@ export function EntityCard({
   };
 
   return (
-    <article className="group flex flex-col justify-between h-full bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_20px_rgba(12,74,66,0.04)] hover:shadow-[0_16px_36px_rgba(12,74,66,0.12)] transition-all duration-300 hover:-translate-y-1">
+    <article className="group flex flex-col justify-between h-full bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_20px_rgba(49,42,87,0.05)] hover:shadow-[0_16px_36px_rgba(49,42,87,0.14)] transition-all duration-300 hover:-translate-y-1">
       <div>
         {/* CardImageHeader Obligatorio */}
         <CardImageHeader
@@ -81,7 +81,7 @@ export function EntityCard({
         <div className="p-6">
           {price && (
             <div className="mb-2.5 inline-block">
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#E6F4F1] text-[#0C4A42] border border-[#14B8A6]/30">
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#EDE9F6] text-[#312A57] border border-[#C8C0E2]">
                 {price}
               </span>
             </div>
@@ -96,7 +96,7 @@ export function EntityCard({
                     : urgency === "alta"
                     ? "bg-amber-100 text-amber-900 border border-amber-300"
                     : urgency === "moderada"
-                    ? "bg-teal-100 text-teal-900 border border-teal-300"
+                    ? "bg-indigo-100 text-[#312A57] border border-indigo-200"
                     : "bg-emerald-100 text-emerald-900 border border-emerald-300"
                 }`}
               >
@@ -112,7 +112,7 @@ export function EntityCard({
                   </>
                 ) : urgency === "moderada" ? (
                   <>
-                    <Clock className="w-3.5 h-3.5 text-teal-600" />
+                    <Clock className="w-3.5 h-3.5 text-[#312A57]" />
                     Prioridad Moderada
                   </>
                 ) : (
@@ -125,7 +125,7 @@ export function EntityCard({
             </div>
           )}
 
-          <h3 className="font-heading text-lg sm:text-xl font-bold text-[#091E1B] group-hover:text-[#0C4A42] transition-colors leading-snug line-clamp-2">
+          <h3 className="font-heading text-lg sm:text-xl font-bold text-[#181430] group-hover:text-[#312A57] transition-colors leading-snug line-clamp-2">
             {name}
           </h3>
 
@@ -135,11 +135,11 @@ export function EntityCard({
         </div>
       </div>
 
-      {/* Botón conciso institucional */}
-      <div className="p-6 pt-0 mt-auto">
+        {/* Botón conciso institucional */}
+        <div className="p-6 pt-0 mt-auto">
         <Link
           href={getHref()}
-          className="w-full flex items-center justify-between py-3.5 px-5 rounded-xl bg-neutral-50 hover:bg-[#0C4A42] text-[#0C4A42] hover:text-white font-semibold text-xs sm:text-sm tracking-wide transition-all duration-300 border border-neutral-200 hover:border-[#0C4A42] group/btn"
+          className="w-full flex items-center justify-between py-3.5 px-5 rounded-xl bg-neutral-50 hover:bg-[#312A57] text-[#312A57] hover:text-white font-semibold text-xs sm:text-sm tracking-wide transition-all duration-300 border border-neutral-200 hover:border-[#312A57] group/btn"
         >
           <span>{getButtonText()}</span>
           <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />

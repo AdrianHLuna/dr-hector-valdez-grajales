@@ -57,7 +57,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
     .filter(Boolean);
 
   return (
-    <div className="bg-[#F7FAF9] min-h-screen py-8 sm:py-10">
+    <div className="bg-[#F8F7FB] min-h-screen py-8 sm:py-10">
       <MedicalConditionStructuredData condition={disease} />
       <FAQStructuredData faqs={disease.faqs} />
 
@@ -85,10 +85,10 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
               />
 
               <div className="p-6 sm:p-8">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0C4A42]">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#312A57]">
                   Guía Clínica Quirúrgica
                 </span>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#091E1B] font-heading mt-1 leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#181430] font-heading mt-1 leading-tight">
                   {disease.name}
                 </h1>
                 {disease.technicalName && (
@@ -104,13 +104,13 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
 
             {/* Cuadro Clínico y Síntomas Frecuentes */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200 shadow-xs">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#091E1B] font-heading mb-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#181430] font-heading mb-4">
                 Manifestaciones y Cuadro Clínico
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {disease.symptoms.map((s, i) => (
-                  <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-[#F7FAF9] border border-neutral-200/80">
-                    <Activity className="w-4 h-4 text-[#0C4A42] shrink-0 mt-0.5" />
+                  <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-[#F8F7FB] border border-neutral-200/80">
+                    <Activity className="w-4 h-4 text-[#312A57] shrink-0 mt-0.5" />
                     <span className="text-xs sm:text-sm text-neutral-700">{s}</span>
                   </div>
                 ))}
@@ -120,13 +120,13 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
             {/* Causas y Factores de Riesgo */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="bg-white rounded-3xl p-6 border border-neutral-200 shadow-xs">
-                <h3 className="text-lg font-bold text-[#091E1B] font-heading mb-3">
+                <h3 className="text-lg font-bold text-[#181430] font-heading mb-3">
                   Causas Principales
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-neutral-600">
                   {disease.causes.map((c, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#0C4A42] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#312A57] shrink-0 mt-2" />
                       <span>{c}</span>
                     </li>
                   ))}
@@ -134,13 +134,13 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
               </div>
 
               <div className="bg-white rounded-3xl p-6 border border-neutral-200 shadow-xs">
-                <h3 className="text-lg font-bold text-[#091E1B] font-heading mb-3">
+                <h3 className="text-lg font-bold text-[#181430] font-heading mb-3">
                   Factores de Riesgo
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-neutral-600">
                   {disease.riskFactors.map((r, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shrink-0 mt-2" />
                       <span>{r}</span>
                     </li>
                   ))}
@@ -173,12 +173,12 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
 
             {/* Abordajes Quirúrgicos y Tratamientos (Cero Marcas de Medicamentos) */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200 shadow-xs">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#091E1B] font-heading mb-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#181430] font-heading mb-4">
                 Abordajes Clínicos y Opciones de Tratamiento
               </h2>
               <div className="space-y-3">
                 {disease.treatments.map((t, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#F7FAF9] border border-neutral-200">
+                  <div key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#F8F7FB] border border-neutral-200">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span className="text-xs sm:text-sm text-neutral-800 leading-relaxed">{t}</span>
                   </div>
@@ -189,7 +189,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
             {/* Cirugías Relacionadas */}
             {relatedServicesList.length > 0 && (
               <div className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200 shadow-xs">
-                <h2 className="text-xl font-bold text-[#091E1B] font-heading mb-4">
+                <h2 className="text-xl font-bold text-[#181430] font-heading mb-4">
                   Procedimientos Quirúrgicos para este Padecimiento
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -197,10 +197,10 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                     <Link
                       key={s!.id}
                       href={`/servicios/${s!.slug}`}
-                      className="p-3.5 rounded-xl bg-[#F7FAF9] hover:bg-[#E6F4F1] border border-neutral-200 hover:border-[#14B8A6] flex items-center justify-between text-xs sm:text-sm font-semibold text-neutral-800 transition-all group"
+                      className="p-3.5 rounded-xl bg-[#F8F7FB] hover:bg-[#EDE9F6] border border-neutral-200 hover:border-[#8B7EC8] flex items-center justify-between text-xs sm:text-sm font-semibold text-neutral-800 transition-all group"
                     >
                       <span className="truncate">{s!.name.split("(")[0]}</span>
-                      <ArrowRight className="w-4 h-4 text-[#0C4A42] transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="w-4 h-4 text-[#312A57] transition-transform group-hover:translate-x-1" />
                     </Link>
                   ))}
                 </div>
@@ -210,7 +210,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
             {/* Síntomas Relacionados */}
             {relatedSymptomsList.length > 0 && (
               <div className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200 shadow-xs">
-                <h2 className="text-xl font-bold text-[#091E1B] font-heading mb-4">
+                <h2 className="text-xl font-bold text-[#181430] font-heading mb-4">
                   Síntomas y Motivos de Consulta Asociados
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -218,10 +218,10 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                     <Link
                       key={sym!.id}
                       href={`/sintomas/${sym!.slug}`}
-                      className="p-3.5 rounded-xl bg-[#F7FAF9] hover:bg-neutral-100 border border-neutral-200 flex items-center justify-between text-xs sm:text-sm font-medium text-neutral-800 transition-all group"
+                      className="p-3.5 rounded-xl bg-[#F8F7FB] hover:bg-[#EDE9F6] border border-neutral-200 flex items-center justify-between text-xs sm:text-sm font-medium text-neutral-800 transition-all group"
                     >
                       <span className="truncate">{sym!.name}</span>
-                      <ArrowRight className="w-4 h-4 text-neutral-400 group-hover:text-[#0C4A42] transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="w-4 h-4 text-neutral-400 group-hover:text-[#312A57] transition-transform group-hover:translate-x-1" />
                     </Link>
                   ))}
                 </div>
@@ -230,13 +230,13 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
 
             {/* Preguntas Frecuentes */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200 shadow-xs">
-              <h2 className="text-xl font-bold text-[#091E1B] font-heading mb-6">
+              <h2 className="text-xl font-bold text-[#181430] font-heading mb-6">
                 Preguntas Frecuentes sobre {disease.name}
               </h2>
               <div className="space-y-4">
                 {disease.faqs.map((faq, i) => (
-                  <div key={i} className="p-4 rounded-xl bg-[#F7FAF9] border border-neutral-200/80">
-                    <h3 className="font-bold text-sm text-[#091E1B]">{faq.question}</h3>
+                  <div key={i} className="p-4 rounded-xl bg-[#F8F7FB] border border-neutral-200/80">
+                    <h3 className="font-bold text-sm text-[#181430]">{faq.question}</h3>
                     <p className="mt-2 text-xs sm:text-sm text-neutral-600 leading-relaxed">
                       {faq.answer}
                     </p>
@@ -248,20 +248,20 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
 
           {/* Columna Lateral Flotante: Dock de Citas (4 cols) */}
           <div className="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
-            <div className="bg-white rounded-3xl p-6 sm:p-7 border-2 border-[#14B8A6]/40 shadow-xl">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#0C4A42] bg-[#E6F4F1] px-3 py-1 rounded-full inline-block">
+            <div className="bg-white rounded-3xl p-6 sm:p-7 border-2 border-[#8B7EC8]/40 shadow-xl">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#312A57] bg-[#EDE9F6] px-3 py-1 rounded-full inline-block">
                 Consultorios Santa Fe
               </span>
-              <h3 className="font-heading text-xl font-extrabold text-[#091E1B] mt-3">
+              <h3 className="font-heading text-xl font-extrabold text-[#181430] mt-3">
                 ¿Presentas síntomas de {disease.name}?
               </h3>
               <p className="text-xs text-neutral-500 mt-1">
                 Atención experta con el Dr. Héctor Valdéz Grajales
               </p>
 
-              <div className="my-5 p-4 rounded-2xl bg-[#F7FAF9] border border-neutral-200">
+              <div className="my-5 p-4 rounded-2xl bg-[#F8F7FB] border border-neutral-200">
                 <span className="text-[11px] text-neutral-500 block">Costo de Consulta:</span>
-                <span className="font-heading text-3xl font-extrabold text-[#0C4A42]">$500</span>
+                <span className="font-heading text-3xl font-extrabold text-[#312A57]">$500</span>
                 <span className="text-xs text-neutral-500 font-semibold ml-1">MXN</span>
                 <span className="text-[11px] text-neutral-400 block mt-0.5">($400 en subsecuentes)</span>
               </div>
@@ -271,9 +271,9 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                   href={`https://wa.me/${doctor.whatsapp.replace(/[^0-9]/g, "")}?text=Hola%20Dr.%20H%C3%A9ctor%20Vald%C3%A9z,%20quisiera%20agendar%20una%20consulta%20por%20${encodeURIComponent(disease.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#0C4A42] hover:bg-[#08332D] text-white font-bold text-xs sm:text-sm shadow-md transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#312A57] hover:bg-[#1E1838] text-white font-bold text-xs sm:text-sm shadow-md transition-all"
                 >
-                  <MessageCircle className="w-4 h-4 text-[#5EEAD4]" />
+                  <MessageCircle className="w-4 h-4 text-[#DDD8F5]" />
                   <span>Agendar por WhatsApp ($500)</span>
                 </a>
 

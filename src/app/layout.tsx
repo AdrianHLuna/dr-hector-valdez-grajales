@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Dr. Héctor Valdéz Grajales" }],
   creator: "Dr. Héctor Valdéz Grajales",
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
   openGraph: {
     type: "website",

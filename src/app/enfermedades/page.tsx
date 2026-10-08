@@ -12,16 +12,16 @@ export const metadata: Metadata = {
 
 export default function EnfermedadesPage() {
   return (
-    <div className="bg-[#F7FAF9] min-h-screen py-8 sm:py-10">
+    <div className="bg-[#F8F7FB] min-h-screen py-8 sm:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ label: "Padecimientos Médicos" }]} isDark={false} />
 
         {/* Encabezado compacto y natural */}
         <div className="mt-4 mb-10 max-w-3xl">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#0C4A42]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#312A57]">
             Dossier Clínico & Orientación Oportuna
           </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#091E1B] font-heading tracking-tight mt-1">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#181430] font-heading tracking-tight mt-1">
             Padecimientos Quirúrgicos Frecuentes
           </h1>
           <p className="text-sm sm:text-base text-neutral-600 mt-2.5 leading-relaxed">

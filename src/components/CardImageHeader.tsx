@@ -35,16 +35,16 @@ export function CardImageHeader({
           onError={() => setImageError(true)}
         />
       ) : (
-        <div className="relative flex h-full w-full flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-[#0C4A42] via-[#093530] to-[#081D1A]">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#14B8A6]/20 via-transparent to-transparent pointer-events-none" />
+        <div className="relative flex h-full w-full flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-[#312A57] via-[#241F42] to-[#141124]">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#8B7EC8]/20 via-transparent to-transparent pointer-events-none" />
           
           <div className="relative z-10 flex flex-col items-center justify-center">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 shadow-sm border border-[#14B8A6]/30 mb-2 backdrop-blur-md">
-              <svg className="w-6 h-6 text-[#2DD4BF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 shadow-sm border border-[#8B7EC8]/30 mb-2 backdrop-blur-md">
+              <svg className="w-6 h-6 text-[#DDD8F5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17"/>
               </svg>
             </div>
-            <span className="text-xs font-semibold tracking-wider uppercase text-[#5EEAD4]">
+            <span className="text-xs font-semibold tracking-wider uppercase text-[#DDD8F5]">
               {category === "laparoscopia"
                 ? "Laparoscopía de Mínima Invasión"
                 : category === "hernias"
@@ -62,13 +62,13 @@ export function CardImageHeader({
             </span>
           </div>
 
-          <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-[#14B8A6]/10 blur-xl pointer-events-none" />
+          <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-[#8B7EC8]/10 blur-xl pointer-events-none" />
         </div>
       )}
 
       {badgeText && (
         <div className="absolute top-3 left-3 z-20">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[#0C4A42]/90 text-[#5EEAD4] shadow-sm backdrop-blur-md border border-[#14B8A6]/30">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[#312A57]/90 text-[#DDD8F5] shadow-sm backdrop-blur-md border border-[#8B7EC8]/30">
             {badgeText}
           </span>
         </div>
