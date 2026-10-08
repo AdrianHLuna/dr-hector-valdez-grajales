@@ -34,7 +34,6 @@ import { diseases } from "@/data/diseases";
 import { symptoms } from "@/data/symptoms";
 import { CardImageHeader } from "@/components/CardImageHeader";
 import DoctorPortrait from "@/components/DoctorPortrait";
-import { FAQStructuredData } from "@/components/StructuredData";
 
 export default function HomePage() {
   const vBiliary = services.find((s) => s.slug === "colecistectomia-laparoscopica")!;
@@ -47,38 +46,8 @@ export default function HomePage() {
   const urgentSymptoms = symptoms.filter((s) => s.urgencyLevel === "urgencia_inmediata" || s.urgencyLevel === "alta").slice(0, 4);
   const keyDiseases = diseases.slice(0, 4);
 
-  const homeFaqs = [
-    {
-      question: "¿Qué tipo de cirugías realiza el Dr. Héctor Valdéz Grajales?",
-      answer:
-        "El doctor es especialista en Cirugía General egresado de la Universidad Autónoma de Chiapas (UNACH). Realiza procedimientos laparoscópicos de mínima invasión (vesícula biliar, apéndice), reparación avanzada de hernias con malla libre de tensión, cirugía proctológica (hemorroides, fístulas, abscesos), resección de tumores benignos (lipomas, quistes) y atención de urgencias abdominales.",
-    },
-    {
-      question: "¿Cuál es el costo de la consulta y qué incluye?",
-      answer:
-        "La consulta de valoración en Consultorios Santa Fe tiene un costo accesible y transparente de $500 MXN ($400 MXN en consultas subsecuentes). Incluye exploración física y palpación abdominal minuciosa, revisión e interpretación de ultrasonidos o tomografías, diagnóstico certero y formulación de presupuesto quirúrgico claro.",
-    },
-    {
-      question: "¿En qué hospitales de Tuxtla Gutiérrez realiza las cirugías?",
-      answer:
-        "El Dr. Valdéz opera en los mejores hospitales privados certificados de Tuxtla Gutiérrez que cuentan con torres de laparoscopía de alta definición, terapia intensiva y estrictas normas de esterilización, adaptando el paquete hospitalario al presupuesto de cada paciente.",
-    },
-    {
-      question: "¿Cómo se atienden las urgencias las 24 horas?",
-      answer:
-        "Para dolor abdominal agudo, sospecha de apendicitis, cólico biliar severo o hernias estranguladas, el doctor cuenta con línea de atención de urgencias directa activa las 24 horas: 961 225 4853.",
-    },
-    {
-      question: "¿Acepta seguros de gastos médicos mayores?",
-      answer:
-        "Sí. Se atienden pacientes con pólizas de seguros mediante la modalidad de reembolso médico, expidiendo informe médico quirúrgico formal y factura electrónica (CFDI) para trámite ágil con todas las aseguradoras.",
-    },
-  ];
-
   return (
     <div className="flex flex-col">
-      <FAQStructuredData faqs={homeFaqs} />
-
       {/* ─── 1. HERO FOLD TRIPARTITO DE CONSOLA QUIRÚRGICA (100vh / min-h-screen) ─── */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#F8F7FB] via-[#F2EEF9] to-[#E6E0F5] overflow-hidden py-12 lg:py-0 border-b border-neutral-200">
         {/* Patrón sutil y halos de iluminación quirúrgica */}
@@ -174,9 +143,6 @@ export default function HomePage() {
                     <span className="text-3xl sm:text-4xl font-extrabold text-[#312A57] font-heading">$500</span>
                     <span className="text-xs font-bold text-neutral-600">MXN</span>
                   </div>
-                  <span className="text-[11px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full inline-block">
-                    ✓ Consulta subsecuente $400 MXN
-                  </span>
                 </div>
 
                 {/* Lo que incluye la cita */}
@@ -258,7 +224,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* BENTO GRID ASIMÉTRICO (Layout 2 cols / 3 cols mixto y variado) */}
+          {/* BENTO GRID ASIMÉTRICO */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
             
             {/* Bento Card 1: PANORÁMICA DE VESÍCULA BILIAR (Span 7 cols) */}
@@ -655,105 +621,77 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Tarjeta 1: Primera Vez */}
-            <div className="p-8 rounded-3xl bg-white border-2 border-[#312A57] shadow-xl relative flex flex-col justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Tarjeta 1: Valoración Quirúrgica */}
+            <div className="p-8 sm:p-10 rounded-3xl bg-white border-2 border-[#312A57] shadow-xl relative flex flex-col justify-between">
               <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold bg-[#312A57] text-[#DDD8F5] shadow-sm">
-                Más Solicitada
+                Atención Especializada
               </span>
               <div>
-                <h3 className="font-heading text-lg font-bold text-neutral-900">
-                  Consulta de Primera Vez
+                <h3 className="font-heading text-xl font-bold text-neutral-900">
+                  Consulta de Valoración Quirúrgica
                 </h3>
-                <p className="text-xs text-neutral-500 mt-1">Valoración completa en Consultorios Santa Fe</p>
+                <p className="text-xs text-neutral-500 mt-1">Atención personalizada en Consultorios Santa Fe</p>
                 <div className="my-6">
-                  <span className="font-heading text-4xl font-extrabold text-[#312A57]">$500</span>
+                  <span className="font-heading text-4xl sm:text-5xl font-extrabold text-[#312A57]">$500</span>
                   <span className="text-xs text-neutral-500 font-semibold ml-1">MXN</span>
                 </div>
-                <ul className="space-y-2.5 text-xs text-neutral-600">
-                  <li className="flex items-center gap-2">
+                <ul className="space-y-3 text-xs sm:text-sm text-neutral-600">
+                  <li className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Historia clínica y palpación abdominal completa
+                    <span>Historia clínica y exploración abdominal minuciosa</span>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Interpretación de ultrasonidos y estudios previos
+                    <span>Revisión e interpretación de ultrasonidos y estudios previos</span>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Diagnóstico certero y segunda opinión médica honesta
+                    <span>Diagnóstico certero y segunda opinión médica honesta</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <span>Plan quirúrgico personalizado y presupuesto claro</span>
                   </li>
                 </ul>
               </div>
               <a
-                href={`https://wa.me/${doctor.whatsapp.replace(/[^0-9]/g, "")}?text=Hola%20Dr.%20H%C3%A9ctor%20Vald%C3%A9z,%20quisiera%20agendar%20mi%20consulta%20de%20primera%20vez%20de%20$500%20pesos.`}
+                href={`https://wa.me/${doctor.whatsapp.replace(/[^0-9]/g, "")}?text=Hola%20Dr.%20H%C3%A9ctor%20Vald%C3%A9z,%20quisiera%20agendar%20mi%20consulta%20de%20valoraci%C3%B3n%20quir%C3%BArgica%20de%20$500%20pesos.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 w-full py-3.5 rounded-xl bg-[#312A57] hover:bg-[#1E1838] text-white text-xs font-bold text-center block transition-all shadow-md"
+                className="mt-8 w-full py-4 rounded-xl bg-[#312A57] hover:bg-[#1E1838] text-white text-xs sm:text-sm font-bold text-center block transition-all shadow-md"
               >
-                Agendar por $500 MXN
+                Agendar Consulta por $500 MXN
               </a>
             </div>
 
-            {/* Tarjeta 2: Subsecuente */}
-            <div className="p-8 rounded-3xl bg-white border border-neutral-200 shadow-sm flex flex-col justify-between">
+            {/* Tarjeta 2: Paquetes Quirúrgicos */}
+            <div className="p-8 sm:p-10 rounded-3xl bg-white border border-neutral-200 shadow-sm flex flex-col justify-between">
               <div>
-                <h3 className="font-heading text-lg font-bold text-neutral-900">
-                  Consulta Subsecuente
-                </h3>
-                <p className="text-xs text-neutral-500 mt-1">Seguimiento y evolución clínica</p>
-                <div className="my-6">
-                  <span className="font-heading text-4xl font-extrabold text-neutral-800">$400</span>
-                  <span className="text-xs text-neutral-500 font-semibold ml-1">MXN</span>
-                </div>
-                <ul className="space-y-2.5 text-xs text-neutral-600">
-                  <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Revisión de nuevos estudios de control
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Seguimiento postquirúrgico y retiro de puntos
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Alta médica y recomendaciones finales
-                  </li>
-                </ul>
-              </div>
-              <a
-                href={`https://wa.me/${doctor.whatsapp.replace(/[^0-9]/g, "")}?text=Hola%20Dr.%20H%C3%A9ctor%20Vald%C3%A9z,%20quisiera%20agendar%20mi%20consulta%20subsecuente.`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 w-full py-3.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs font-bold text-center block transition-all"
-              >
-                Agendar Subsecuente ($400)
-              </a>
-            </div>
-
-            {/* Tarjeta 3: Paquetes Quirúrgicos */}
-            <div className="p-8 rounded-3xl bg-white border border-neutral-200 shadow-sm flex flex-col justify-between">
-              <div>
-                <h3 className="font-heading text-lg font-bold text-neutral-900">
+                <h3 className="font-heading text-xl font-bold text-neutral-900">
                   Cirugías Programadas
                 </h3>
                 <p className="text-xs text-neutral-500 mt-1">Vesícula, hernias, lipomas y apéndice</p>
                 <div className="my-6">
-                  <span className="font-heading text-2xl font-extrabold text-[#F59E0B]">A Presupuesto</span>
+                  <span className="font-heading text-3xl sm:text-4xl font-extrabold text-[#F59E0B]">A Presupuesto</span>
                   <span className="text-xs text-neutral-500 block mt-1">Paquetes hospitalarios personalizados</span>
                 </div>
-                <ul className="space-y-2.5 text-xs text-neutral-600">
-                  <li className="flex items-center gap-2">
+                <ul className="space-y-3 text-xs sm:text-sm text-neutral-600">
+                  <li className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Honorarios del equipo quirúrgico y anestesia
+                    <span>Honorarios del equipo quirúrgico y anestesiología</span>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Quirófano hospitalario privado y material estéril
+                    <span>Quirófano hospitalario privado certificado y material estéril</span>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    Reembolso ágil con todas las aseguradoras (GMM)
+                    <span>Mallas biocompatibles de alta tecnología e insumos de laparoscopía</span>
+                  </li>
+                  <li className="flex items-center gap-2.5">
+                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <span>Informe médico formal para reembolso con aseguradoras (GMM)</span>
                   </li>
                 </ul>
               </div>
@@ -761,9 +699,9 @@ export default function HomePage() {
                 href={`https://wa.me/${doctor.whatsapp.replace(/[^0-9]/g, "")}?text=Hola%20Dr.%20H%C3%A9ctor%20Vald%C3%A9z,%20solicito%20informaci%C3%B3n%20sobre%20un%20presupuesto%20quir%C3%BArgico.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 w-full py-3.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs font-bold text-center block transition-all"
+                className="mt-8 w-full py-4 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-bold text-center block transition-all"
               >
-                Cotizar Cirugía
+                Cotizar Procedimiento Quirúrgico
               </a>
             </div>
           </div>
@@ -813,38 +751,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 7. SECCIÓN: PREGUNTAS FRECUENTES (FAQS) ─── */}
-      <section className="py-20 bg-white border-b border-neutral-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#312A57]">
-              Respuestas Claras
-            </span>
-            <h2 className="text-3xl font-extrabold text-[#181430] font-heading mt-1">
-              Preguntas Frecuentes sobre la Consulta Quirúrgica
-            </h2>
-          </div>
-
-          <div className="space-y-4">
-            {homeFaqs.map((faq, index) => (
-              <details
-                key={index}
-                className="group p-6 rounded-2xl bg-[#F8F7FB] border border-neutral-200/80 transition-all [&_summary::-webkit-details-marker]:hidden"
-              >
-                <summary className="flex items-center justify-between cursor-pointer font-bold text-base text-[#181430] group-hover:text-[#312A57] transition-colors">
-                  <span>{faq.question}</span>
-                  <ChevronRight className="w-5 h-5 text-[#312A57] transition-transform duration-300 group-open:rotate-90 shrink-0 ml-4" />
-                </summary>
-                <p className="mt-3 text-sm text-neutral-600 leading-relaxed border-t border-neutral-200/60 pt-3">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 8. BANNER FINAL CTA URGENCIAS Y CITAS ─── */}
+      {/* ─── 7. BANNER FINAL CTA URGENCIAS Y CITAS ─── */}
       <section className="py-16 bg-gradient-to-r from-[#312A57] via-[#241F42] to-[#141124] text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
