@@ -50,15 +50,15 @@ export function Header() {
 
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 sm:h-22">
           {/* Brand Logo & Doctor Name */}
           <Link href="/" className="flex items-center gap-3.5 group">
-            <div className="relative w-12 h-12 rounded-2xl bg-white shadow-xs border border-[#C8C0E2] p-1.5 flex items-center justify-center group-hover:scale-105 transition-transform overflow-hidden">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 group-hover:scale-105 transition-transform">
               <Image
                 src="/images/icono.png"
                 alt="Isotipo Dr. Héctor Valdéz Grajales"
-                width={48}
-                height={48}
+                width={64}
+                height={64}
                 className="w-full h-full object-contain"
                 priority
               />
