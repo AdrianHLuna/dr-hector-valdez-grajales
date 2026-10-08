@@ -10,7 +10,7 @@ interface DoctorPortraitProps {
 }
 
 export default function DoctorPortrait({
-  imageSrc = "/images/doctor-hero.webp",
+  imageSrc = "/hero.jpg",
   className = "",
 }: DoctorPortraitProps) {
   const [hasError, setHasError] = useState(false);

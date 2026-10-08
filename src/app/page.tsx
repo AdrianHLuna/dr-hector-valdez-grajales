@@ -538,41 +538,127 @@ export default function HomePage() {
 
       {/* ─── 4. SECCIÓN: DOSSIER INSTITUCIONAL & TRAYECTORIA DEL CIRUJANO ─── */}
       <section className="py-20 bg-white border-b border-neutral-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
-          {/* Encabezado Monumental de Acreditación UNACH */}
-          <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#181430] via-[#241F42] to-[#312A57] text-white shadow-xl mb-12">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8 space-y-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#DDD8F5] bg-white/10 px-3 py-1 rounded-full inline-block">
-                  Facultad de Medicina Humana · Universidad Autónoma de Chiapas
-                </span>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-heading text-white tracking-tight">
-                  Dr. Héctor Valdéz Grajales — Cirujano General
-                </h2>
-                <p className="text-xs sm:text-sm text-neutral-200 max-w-2xl leading-relaxed">
-                  Más de 5 años de práctica activa como cirujano general y gastrocirujano titular en Tuxtla Gutiérrez, con sólida formación universitaria, rigurosidad técnica y más de 5,500 pacientes atendidos en el estado de Chiapas.
-                </p>
-              </div>
-
-              <div className="lg:col-span-4 flex flex-col gap-3">
-                <div className="p-3.5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md">
-                  <span className="text-[10px] text-neutral-300 uppercase tracking-wider block">Cédula Profesional Cirugía General</span>
-                  <span className="font-mono text-base font-bold text-[#DDD8F5]">11742236</span>
-                  <span className="text-[11px] text-neutral-300 block">UNACH</span>
+          {/* Bento Split: Fotografía Oficial en About Me (aspect-[3/4]) + Semblanza y Acreditaciones */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* COLUMNA 1 (5 de 12): Marco Dedicado para la Fotografía Oficial del Médico */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-2 border-[#8B7EC8]/30 bg-gradient-to-br from-[#181430] via-[#241F42] to-[#312A57] group">
+                <Image
+                  src={doctor.aboutPhoto || "/aboutme.jpg"}
+                  alt="Dr. Héctor Valdéz Grajales — Cirujano General en Tuxtla Gutiérrez"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 500px"
+                  className="object-cover object-top group-hover:scale-102 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#141124] via-transparent to-transparent opacity-80" />
+                
+                {/* Badge Superior */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#181430]/90 backdrop-blur-md border border-white/20 text-[#DDD8F5] text-xs font-bold shadow-md">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#F59E0B]" />
+                    UNACH · Cirugía General
+                  </span>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md">
-                  <span className="text-[10px] text-neutral-300 uppercase tracking-wider block">Cédula Médico Cirujano</span>
-                  <span className="font-mono text-base font-bold text-white">8405839</span>
-                  <span className="text-[11px] text-neutral-300 block">UNACH</span>
+                {/* Badge Inferior Flotante con Distintivos de Certificación y Trayectoria */}
+                <div className="absolute bottom-4 left-4 right-4 z-10 p-4 rounded-2xl bg-[#141124]/90 backdrop-blur-md border border-white/15 text-white shadow-xl space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-amber-300 flex items-center gap-1">
+                      <Sparkles className="w-3.5 h-3.5" /> +5,000 Cirugías Realizadas
+                    </span>
+                    <span className="text-[11px] font-mono text-neutral-300">Céd. 11742236</span>
+                  </div>
+                  <p className="text-xs text-neutral-300 leading-snug">
+                    Cirujano Titular en Consultorios Santa Fe y Hospitales Privados de Chiapas
+                  </p>
                 </div>
               </div>
             </div>
+
+            {/* COLUMNA 2 (7 de 12): Semblanza, Filosofía Médica y Cédulas UNACH */}
+            <div className="lg:col-span-7 space-y-6">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#312A57] bg-[#EDE9F6] px-3.5 py-1 rounded-full inline-block">
+                  Semblanza Institucional & Trayectoria
+                </span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#181430] font-heading tracking-tight mt-3">
+                  Dr. Héctor Valdéz Grajales
+                </h2>
+                <p className="text-sm sm:text-base font-semibold text-[#5B4E9B] mt-1">
+                  Especialista en Cirugía General y Laparoscopía de Mínima Invasión
+                </p>
+              </div>
+
+              <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
+                {doctor.bio}
+              </p>
+
+              {/* Callout de Filosofía Médica */}
+              <div className="p-5 rounded-2xl bg-[#F8F7FB] border-l-4 border-[#312A57] border-y border-r border-neutral-200 space-y-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#312A57] block">
+                  Filosofía de Práctica Quirúrgica:
+                </span>
+                <p className="text-xs sm:text-sm text-neutral-700 italic leading-relaxed">
+                  "{doctor.philosophy}"
+                </p>
+              </div>
+
+              {/* Cédulas Profesionales UNACH */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+                <div className="p-4 rounded-2xl bg-white border border-[#C8C0E2] shadow-2xs">
+                  <span className="text-[10px] font-bold text-neutral-500 uppercase tracking-wider block">
+                    Cédula de Especialidad en Cirugía General
+                  </span>
+                  <div className="flex items-baseline gap-2 mt-1">
+                    <span className="font-mono text-lg font-black text-[#312A57]">{doctor.cedulaEspecialidad}</span>
+                    <span className="text-xs font-semibold text-neutral-600">UNACH</span>
+                  </div>
+                  <span className="text-[11px] text-neutral-400 block mt-0.5">
+                    Universidad Autónoma de Chiapas
+                  </span>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-white border border-[#C8C0E2] shadow-2xs">
+                  <span className="text-[10px] font-bold text-neutral-500 uppercase tracking-wider block">
+                    Cédula Profesional Médico Cirujano
+                  </span>
+                  <div className="flex items-baseline gap-2 mt-1">
+                    <span className="font-mono text-lg font-black text-[#181430]">{doctor.cedula}</span>
+                    <span className="text-xs font-semibold text-neutral-600">UNACH</span>
+                  </div>
+                  <span className="text-[11px] text-neutral-400 block mt-0.5">
+                    Facultad de Medicina Humana
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <a
+                  href={`https://wa.me/${doctor.whatsapp.replace(/[^0-9]/g, "")}?text=Hola%20Dr.%20H%C3%A9ctor%20Vald%C3%A9z,%20quisiera%20agendar%20una%20consulta%20de%20valoraci%C3%B3n.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#312A57] hover:bg-[#1E1838] text-white text-xs sm:text-sm font-bold shadow-md transition-all"
+                >
+                  <MessageCircle className="w-4 h-4 text-emerald-400" />
+                  <span>Agendar Consulta de Valoración ($500 MXN)</span>
+                </a>
+                <Link
+                  href="/contacto"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-semibold transition-all"
+                >
+                  <MapPin className="w-4 h-4 text-[#312A57]" />
+                  <span>Ver Consultorios Santa Fe</span>
+                </Link>
+              </div>
+            </div>
+
           </div>
 
           {/* Franja de Métricas Cuantificables */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
             {doctor.stats.map((s, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-[#F8F7FB] border border-[#C8C0E2] text-center">
                 <span className="font-heading text-3xl sm:text-4xl font-extrabold text-[#312A57] block">

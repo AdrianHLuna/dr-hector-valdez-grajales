@@ -53,8 +53,8 @@ export const doctor: DoctorProfile = {
     "Domingo: Urgencias quirúrgicas 24 horas",
   ],
   acceptingNewPatients: true,
-  photo: "/images/doctor-hero.webp",
-  aboutPhoto: "/images/doctor-about.webp",
+  photo: "/hero.jpg",
+  aboutPhoto: "/aboutme.jpg",
   bio: "El Dr. Héctor Valdéz Grajales es un distinguido Médico Cirujano y Especialista en Cirugía General egresado de la Universidad Autónoma de Chiapas (UNACH). Con más de 5,000 procedimientos quirúrgicos y más de 5,500 pacientes atendidos en Tuxtla Gutiérrez y el estado de Chiapas, el doctor se distingue por su práctica quirúrgica humana, precisa y de vanguardia técnica en procedimientos laparoscópicos de mínima invasión (cirugía de vesícula biliar y apendicitis), reparación de hernias complejas con malla y resolución de afecciones digestivas y proctológicas.",
   philosophy: "La cirugía moderna debe priorizar la seguridad absoluta, el mínimo trauma tisular y una recuperación rápida que devuelva al paciente a su vida familiar y productiva sin dolor excesivo. Cada indicación quirúrgica se fundamenta en un diagnóstico certero, honesto y transparente.",
   experience: [
