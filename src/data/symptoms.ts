@@ -23,7 +23,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "El cólico biliar indica que existen cálculos que pueden atascarse permanentemente, perforar la vesícula o migrar provocando pancreatitis aguda. La evaluación médica temprana con ultrasonido evita cirugías de emergencia complicadas.",
     relatedConditions: ["vesicula-biliar-litiasis", "colecistitis-cronica"],
-    image: "/images/sintomas/colico-biliar-bajo-costillas.webp",
+    image: "/sintomas/colico-biliar-bajo-costillas.jpg",
     seo: {
       title: "Cólico Biliar y Dolor de Vesícula en Tuxtla | Dr. Héctor Valdéz",
       description: "Orientación médica sobre dolor de vesícula y cólico biliar en Tuxtla Gutiérrez, Chiapas. Cirujano general especialista.",
@@ -63,7 +63,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "El abdomen agudo es una condición médica potencialmente mortal que no espera. Requiere valoración hospitalaria urgente por un cirujano general las 24 horas para definir si el paciente necesita cirugía inmediata.",
     relatedConditions: ["vesicula-biliar-litiasis", "apendicitis-aguda", "hernia-inguinal", "enfermedad-diverticular", "pancreatitis-aguda"],
-    image: "/images/sintomas/dolor-abdominal-agudo.webp",
+    image: "/sintomas/dolor-abdominal-agudo.jpg",
     seo: {
       title: "Dolor Abdominal Agudo de Urgencia en Tuxtla | Dr. Héctor Valdéz",
       description: "Atención de urgencia de abdomen agudo las 24 horas en Tuxtla Gutiérrez, Chiapas. Cirujano general especialista en urgencias quirúrgicas.",
@@ -102,7 +102,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "El 90% de los dolores persistentes en la fosa ilíaca derecha corresponden a apendicitis aguda. Operar antes de que se perfore el apéndice marca la diferencia entre una recuperación de 24 horas o semanas de internamiento por peritonitis.",
     relatedConditions: ["apendicitis-aguda"],
-    image: "/images/sintomas/dolor-fosa-iliaca-derecha.webp",
+    image: "/sintomas/dolor-fosa-iliaca-derecha.jpg",
     seo: {
       title: "Dolor en Fosa Ilíaca Derecha en Tuxtla | Dr. Héctor Valdéz",
       description: "Diagnóstico diferencial de dolor en fosa ilíaca derecha y sospecha de apendicitis en Tuxtla Gutiérrez, Chiapas.",
@@ -139,7 +139,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Toda hernia de pared abdominal tiende a crecer con el tiempo y conlleva el riesgo latente de encarcelamiento o estrangulación intestinal. La reparación programada con malla es un procedimiento seguro y ambulatorio.",
     relatedConditions: ["hernia-inguinal", "hernia-umbilical-abdominal"],
-    image: "/images/sintomas/abultamiento-ingle-ombligo.webp",
+    image: "/sintomas/abultamiento-ingle-ombligo.jpg",
     seo: {
       title: "Bulto en Ingle y Ombligo (Hernia) en Tuxtla | Dr. Héctor Valdéz",
       description: "Evaluación especializada de abultamientos en ingle y ombligo en Tuxtla Gutiérrez, Chiapas. Cirugía de hernias con malla.",
@@ -177,7 +177,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Permite descartar lesiones atípicas y extirpar la cápsula completa de forma ambulatoria y estética bajo anestesia local antes de que alcance un tamaño complejo.",
     relatedConditions: ["lipomas-subcutaneos", "tumores-partes-blandas-quistes"],
-    image: "/images/sintomas/bolita-subcutanea-palpable.webp",
+    image: "/sintomas/bolita-subcutanea-palpable.jpg",
     seo: {
       title: "Bolitas de Grasa y Nódulos en la Piel en Tuxtla | Dr. Héctor Valdéz",
       description: "Valoración y retiro ambulatorio de lipomas, quistes sebáceos y tumores en Tuxtla Gutiérrez, Chiapas.",
@@ -216,7 +216,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "El sangrado anal nunca es normal y no debe asumirse automáticamente como hemorroides sin una revisión médica proctológica profesional para descartar afecciones más severas.",
     relatedConditions: ["absceso-ano-rectal", "hemorroides"],
-    image: "/images/sintomas/dolor-sangrado-al-evacuar.webp",
+    image: "/sintomas/dolor-sangrado-al-evacuar.jpg",
     seo: {
       title: "Sangrado y Dolor al Evacuar en Tuxtla | Dr. Héctor Valdéz",
       description: "Diagnóstico y tratamiento de sangrado anal y hemorroides en Tuxtla Gutiérrez, Chiapas. Cirujano proctólogo.",
@@ -255,7 +255,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Un absceso anal es una infección bacteriana atrapada que debe drenarse quirúrgicamente de inmediato para evitar que el pus dañe los músculos del esfínter o se extienda hacia la pelvis.",
     relatedConditions: ["absceso-ano-rectal"],
-    image: "/images/sintomas/hinchazon-calor-dolor-ano.webp",
+    image: "/sintomas/hinchazon-calor-dolor-ano.jpg",
     seo: {
       title: "Bulto Doloroso e Inflamación en el Ano en Tuxtla | Dr. Héctor Valdéz",
       description: "Atención urgente de abscesos perianales e hinchazón en la zona anal en Tuxtla Gutiérrez, Chiapas. Cirujano general las 24 horas.",
@@ -293,7 +293,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "La diverticulitis puede perforar el colon y causar abscesos o peritonitis fecal grave. El diagnóstico oportuno con tomografía permite un tratamiento médico exitoso evitando cirugías mayores de urgencia.",
     relatedConditions: ["enfermedad-diverticular"],
-    image: "/images/sintomas/dolor-abdominal-izquierdo-fiebre.webp",
+    image: "/sintomas/dolor-abdominal-izquierdo-fiebre.jpg",
     seo: {
       title: "Dolor Abdominal Izquierdo con Fiebre en Tuxtla | Dr. Héctor Valdéz",
       description: "Diagnóstico y tratamiento de dolor en lado izquierdo del vientre y diverticulitis en Tuxtla Gutiérrez, Chiapas. Cirujano de colon y digestivo.",
@@ -332,7 +332,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Las náuseas y vómitos acompañados de dolor abdominal son la señal de alarma que indica que un órgano intraabdominal está inflamado o que el tránsito intestinal está bloqueado.",
     relatedConditions: ["vesicula-biliar-litiasis", "colecistitis-cronica", "apendicitis-aguda", "pancreatitis-aguda"],
-    image: "/images/sintomas/nauseas-vomito-distension.webp",
+    image: "/sintomas/nauseas-vomito-distension.jpg",
     seo: {
       title: "Náuseas, Vómito y Distensión Abdominal en Tuxtla | Dr. Héctor Valdéz",
       description: "Valoración quirúrgica de náuseas y vómitos persistentes con dolor abdominal en Tuxtla Gutiérrez, Chiapas. Atención de urgencias digestivas.",
@@ -371,7 +371,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Cada día que una úlcera diabética permanece infectada sin desbridamiento quirúrgico profesional aumenta el riesgo de que la bacteria alcance el hueso (osteomielitis) y requiera amputación. La atención temprana salva el pie.",
     relatedConditions: ["pie-diabetico-infeccion"],
-    image: "/images/sintomas/ulcera-herida-que-no-sana-pie.webp",
+    image: "/enfermedades/pie-diabetico-infeccion.jpg",
     seo: {
       title: "Úlceras y Pie Diabético en Tuxtla Gutiérrez | Dr. Héctor Valdéz",
       description: "Atención quirúrgica de heridas y úlceras de pie diabético en Tuxtla Gutiérrez, Chiapas. Desbridamiento y salvamento de extremidades.",

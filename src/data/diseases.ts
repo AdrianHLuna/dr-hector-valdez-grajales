@@ -53,7 +53,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["colecistectomia-laparoscopica", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["colico-biliar-bajo-costillas", "nauseas-vomito-distension", "dolor-abdominal-agudo"],
-    image: "/images/enfermedades/vesicula-biliar-litiasis.webp",
+    image: "/enfermedades/vesicula-biliar-litiasis.jpg",
     seo: {
       title: "Cálculos en la Vesícula en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Diagnóstico y cirugía laparoscópica de cálculos en la vesícula en Tuxtla Gutiérrez, Chiapas. Cirujano general especialista.",
@@ -111,7 +111,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["colecistectomia-laparoscopica", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["colico-biliar-bajo-costillas", "nauseas-vomito-distension"],
-    image: "/images/enfermedades/colecistitis-cronica.webp",
+    image: "/enfermedades/colecistitis-cronica.jpg",
     seo: {
       title: "Colecistitis Aguda y Crónica en Tuxtla | Dr. Héctor Valdéz",
       description: "Tratamiento quirúrgico de colecistitis aguda y crónica en Tuxtla Gutiérrez, Chiapas. Cirugía de urgencia y laparoscopía.",
@@ -168,7 +168,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["apendicectomia-laparoscopica", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["dolor-fosa-iliaca-derecha", "dolor-abdominal-agudo", "nauseas-vomito-distension"],
-    image: "/images/enfermedades/apendicitis-aguda.webp",
+    image: "/enfermedades/apendicitis-aguda.jpg",
     seo: {
       title: "Apendicitis Aguda en Tuxtla Gutiérrez | Dr. Héctor Valdéz",
       description: "Cirugía de apendicitis las 24 horas en Tuxtla Gutiérrez, Chiapas. Cirujano general especialista en abdomen agudo y laparoscopía.",
@@ -227,7 +227,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["hernioplastia-inguinal", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["abultamiento-ingle-ombligo", "dolor-abdominal-agudo"],
-    image: "/images/enfermedades/hernia-inguinal.webp",
+    image: "/enfermedades/hernia-inguinal.jpg",
     seo: {
       title: "Hernia Inguinal en Tuxtla Gutiérrez | Dr. Héctor Valdéz Grajales",
       description: "Cirugía de hernia inguinal con malla libre de tensión en Tuxtla Gutiérrez, Chiapas. Diagnóstico y reparación especializada.",
@@ -285,7 +285,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["hernioplastia-umbilical-ventral", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["abultamiento-ingle-ombligo"],
-    image: "/images/enfermedades/hernia-umbilical-abdominal.webp",
+    image: "/enfermedades/hernia-umbilical-abdominal.jpg",
     seo: {
       title: "Hernia Umbilical en Tuxtla Gutiérrez | Dr. Héctor Valdéz",
       description: "Cirugía de hernia de ombligo y pared abdominal con malla en Tuxtla Gutiérrez, Chiapas. Recuperación rápida y estética.",
@@ -342,7 +342,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["reseccion-lipomas-tumores", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["bolita-subcutanea-palpable"],
-    image: "/images/enfermedades/lipomas-subcutaneos.webp",
+    image: "/enfermedades/lipomas-subcutaneos.jpg",
     seo: {
       title: "Extirpación de Lipomas en Tuxtla Gutiérrez | Dr. Héctor Valdéz",
       description: "Cirugía ambulatoria de lipomas y bolitas de grasa en Tuxtla Gutiérrez, Chiapas. Anestesia local y técnicas estéticas.",
@@ -400,7 +400,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["drenaje-absceso-cirugia-fistula", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["hinchazon-calor-dolor-ano", "dolor-sangrado-al-evacuar"],
-    image: "/images/enfermedades/absceso-ano-rectal.webp",
+    image: "/enfermedades/absceso-ano-rectal.jpg",
     seo: {
       title: "Absceso Anal y Fístulas en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Drenaje urgente de abscesos anales y tratamiento de fístulas en Tuxtla Gutiérrez, Chiapas. Cirugía proctológica experta.",
@@ -459,7 +459,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["hemorroidectomia-proctologia", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["dolor-sangrado-al-evacuar"],
-    image: "/images/enfermedades/hemorroides.webp",
+    image: "/enfermedades/hemorroides.jpg",
     seo: {
       title: "Tratamiento de Hemorroides en Tuxtla Gutiérrez | Dr. Héctor Valdéz",
       description: "Cirugía y tratamiento médico de hemorroides en Tuxtla Gutiérrez, Chiapas. Consulta especializada con cirujano general.",
@@ -517,7 +517,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["reseccion-quistes-sinoviales", "reseccion-lipomas-tumores", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["bolita-subcutanea-palpable"],
-    image: "/images/enfermedades/tumores-partes-blandas-quistes.webp",
+    image: "/enfermedades/tumores-partes-blandas-quistes.jpg",
     seo: {
       title: "Quistes Sinoviales y Tumores en Tuxtla | Dr. Héctor Valdéz",
       description: "Cirugía de quistes sinoviales en muñeca y tumores de partes blandas en Tuxtla Gutiérrez, Chiapas. Cirujano general certificado.",
@@ -577,7 +577,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["cirugia-enfermedad-diverticular", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["dolor-abdominal-izquierdo-fiebre", "dolor-abdominal-agudo"],
-    image: "/images/enfermedades/enfermedad-diverticular.webp",
+    image: "/enfermedades/enfermedad-diverticular.jpg",
     seo: {
       title: "Diverticulitis y Enfermedad Diverticular en Tuxtla | Dr. Héctor Valdéz",
       description: "Tratamiento y cirugía de diverticulitis en Tuxtla Gutiérrez, Chiapas. Especialista en cirugía digestiva y de colon.",
@@ -635,7 +635,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["colecistectomia-laparoscopica", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["dolor-abdominal-agudo", "nauseas-vomito-distension"],
-    image: "/images/enfermedades/pancreatitis-aguda.webp",
+    image: "/enfermedades/pancreatitis-aguda.jpg",
     seo: {
       title: "Pancreatitis Aguda Biliar en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Diagnóstico y cirugía de prevención para pancreatitis biliar en Tuxtla Gutiérrez, Chiapas. Cirujano general de urgencias.",
@@ -693,7 +693,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["manejo-quirurgico-pie-diabetico", "consulta-cirugia-general-segunda-opinion"],
     relatedSymptoms: ["ulcera-herida-que-no-sana-pie"],
-    image: "/images/enfermedades/pie-diabetico-infeccion.webp",
+    image: "/enfermedades/pie-diabetico-infeccion.jpg",
     seo: {
       title: "Tratamiento de Pie Diabético en Tuxtla | Dr. Héctor Valdéz",
       description: "Cirugía conservadora, desbridamiento y curaciones de pie diabético en Tuxtla Gutiérrez, Chiapas. Cirujano general enfocado en salvamento de extremidades.",

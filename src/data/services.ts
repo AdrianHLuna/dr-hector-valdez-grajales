@@ -42,7 +42,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["vesicula-biliar-litiasis", "colecistitis-cronica", "pancreatitis-aguda"],
-    image: "/images/servicios/colecistectomia-laparoscopica.webp",
+    image: "/servicios/colecistectomia-laparoscopica.jpg",
     seo: {
       title: "Colecistectomía Laparoscópica en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Cirugía de vesícula biliar por laparoscopía de mínima invasión en Tuxtla Gutiérrez, Chiapas. Cirujano General certificado.",
@@ -85,7 +85,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["apendicitis-aguda"],
-    image: "/images/servicios/apendicectomia-laparoscopica.webp",
+    image: "/servicios/apendicectomia-laparoscopica.jpg",
     seo: {
       title: "Apendicectomía Laparoscópica de Urgencia en Tuxtla | Dr. Héctor Valdéz",
       description: "Cirugía de apendicitis aguda por laparoscopía las 24 horas en Tuxtla Gutiérrez, Chiapas. Atención de abdomen agudo por especialista.",
@@ -128,7 +128,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["hernia-inguinal"],
-    image: "/images/servicios/hernioplastia-inguinal.webp",
+    image: "/servicios/hernioplastia-inguinal.jpg",
     seo: {
       title: "Hernioplastía Inguinal con Malla en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Cirugía de hernia inguinal con malla libre de tensión en Tuxtla Gutiérrez, Chiapas. Cirujano General de alta experiencia.",
@@ -171,7 +171,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["hernia-umbilical-abdominal"],
-    image: "/images/servicios/hernioplastia-umbilical-ventral.webp",
+    image: "/servicios/hernioplastia-umbilical-ventral.jpg",
     seo: {
       title: "Cirugía de Hernia Umbilical en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Reparación de hernia de ombligo y pared abdominal con malla en Tuxtla Gutiérrez, Chiapas. Cirujano general certificado.",
@@ -214,7 +214,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["lipomas-subcutaneos", "tumores-partes-blandas-quistes"],
-    image: "/images/servicios/reseccion-lipomas-tumores.webp",
+    image: "/servicios/reseccion-lipomas-tumores.jpg",
     seo: {
       title: "Extirpación de Lipomas y Quistes en Tuxtla | Dr. Héctor Valdéz",
       description: "Cirugía ambulatoria de lipomas y tumores benignos de la piel en Tuxtla Gutiérrez, Chiapas. Procedimientos con anestesia local.",
@@ -257,7 +257,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["absceso-ano-rectal"],
-    image: "/images/servicios/drenaje-absceso-cirugia-fistula.webp",
+    image: "/servicios/drenaje-absceso-cirugia-fistula.jpg",
     seo: {
       title: "Drenaje de Absceso Anal y Fístulas en Tuxtla | Dr. Héctor Valdéz",
       description: "Cirugía de urgencia de abscesos perianales y tratamiento de fístulas anorrectales en Tuxtla Gutiérrez, Chiapas.",
@@ -300,7 +300,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["hemorroides"],
-    image: "/images/servicios/hemorroidectomia-proctologia.webp",
+    image: "/servicios/hemorroidectomia-proctologia.jpg",
     seo: {
       title: "Cirugía de Hemorroides en Tuxtla Gutiérrez | Dr. Héctor Valdéz Grajales",
       description: "Hemorroidectomía y proctología quirúrgica avanzada en Tuxtla Gutiérrez, Chiapas. Alivio definitivo de dolor y sangrado anal.",
@@ -343,7 +343,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["pie-diabetico-infeccion"],
-    image: "/images/servicios/manejo-quirurgico-pie-diabetico.webp",
+    image: "/servicios/manejo-quirurgico-pie-diabetico.jpg",
     seo: {
       title: "Tratamiento de Pie Diabético en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Cirugía, curación y desbridamiento de pie diabético infectado en Tuxtla Gutiérrez, Chiapas. Criterio de salvamento de extremidad.",
@@ -386,7 +386,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["enfermedad-diverticular"],
-    image: "/images/servicios/cirugia-enfermedad-diverticular.webp",
+    image: "/servicios/cirugia-enfermedad-diverticular.jpg",
     seo: {
       title: "Cirugía de Diverticulitis en Tuxtla | Dr. Héctor Valdéz Grajales",
       description: "Tratamiento médico y quirúrgico de enfermedad diverticular y diverticulitis en Tuxtla Gutiérrez, Chiapas. Cirugía digestiva especializada.",
@@ -429,7 +429,7 @@ export const services: MedicalService[] = [
       },
     ],
     relatedConditions: ["tumores-partes-blandas-quistes"],
-    image: "/images/servicios/reseccion-quistes-sinoviales.webp",
+    image: "/servicios/reseccion-quistes-sinoviales.jpg",
     seo: {
       title: "Cirugía de Quistes Sinoviales y Gangliones en Tuxtla | Dr. Héctor Valdéz",
       description: "Extirpación quirúrgica de quistes sinoviales en muñeca y articulaciones en Tuxtla Gutiérrez, Chiapas. Cirujano general certificado.",
@@ -484,7 +484,7 @@ export const services: MedicalService[] = [
       "pancreatitis-aguda",
       "pie-diabetico-infeccion",
     ],
-    image: "/images/servicios/consulta-cirugia-general.webp",
+    image: "/servicios/consulta-cirugia-general.jpg",
     seo: {
       title: "Consulta de Cirugía General en Tuxtla Gutiérrez ($500) | Dr. Héctor Valdéz",
       description: "Consulta médica con especialista en Cirugía General en Tuxtla Gutiérrez, Chiapas. Valoración quirúrgica y segunda opinión por $500 MXN.",
