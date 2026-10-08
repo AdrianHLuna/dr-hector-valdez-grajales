@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0C4A42;
+  --color-brand-primary-dark: #08332D;
+  --color-brand-secondary: #14B8A6;
+  --color-brand-mint: #2DD4BF;
+  --color-brand-amber: #F59E0B;
+  --color-brand-obsidian: #091E1B;
+  --color-brand-alabaster: #F7FAF9;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #F7FAF9;
+    color: #1F2937;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Bordes Asimétricos de Identidad */
+.rounded-brand-asym {
+  border-top-right-radius: 3.5rem;
+  border-bottom-left-radius: 3.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-brand-asym-reverse {
+  border-top-left-radius: 3.5rem;
+  border-bottom-right-radius: 3.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
